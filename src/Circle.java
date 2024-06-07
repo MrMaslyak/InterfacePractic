@@ -19,9 +19,11 @@ public class Circle extends GeometryFigure {
     }
 
     @Override
-    void area() {
+    double area() {
         System.out.println("Circle area: ");
         double area = pi * Math.pow(radius, 2);
         System.out.println(area);
+        return area;
     }
+
 }

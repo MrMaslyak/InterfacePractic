@@ -24,9 +24,12 @@ public class Rectangle extends GeometryFigure {
     }
 
     @Override
-    void area() {
+    double area() {
         System.out.println("Rectangle area: ");
         double area = widthA * heightB;
         System.out.println(area);
+        return area;
     }
+
+
 }

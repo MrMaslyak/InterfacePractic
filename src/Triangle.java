@@ -24,9 +24,11 @@ public class Triangle extends GeometryFigure {
     }
 
     @Override
-    void area() {
+    double area() {
         System.out.println("Triangle area: ");
         double area = (baseA * heightB) / 2;
         System.out.println(area);
+        return area;
     }
+
 }
