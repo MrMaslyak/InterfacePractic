@@ -1,10 +1,21 @@
 public class Rectangle extends GeometryFigure {
     private double widthA;
+    private double lengthC;
     private double heightB;
 
-    public Rectangle(double widthA, double heightB) {
+    public Rectangle(double widthA, double height, double lengthC) {
         this.widthA = widthA;
-        this.heightB = heightB;
+        this.heightB = height;
+        this.lengthC = lengthC;
+
+    }
+
+    public double getLengthC() {
+        return lengthC;
+    }
+
+    public void setLengthC(double lengthC) {
+        this.lengthC = lengthC;
     }
 
     public double getWidthA() {
@@ -29,6 +40,14 @@ public class Rectangle extends GeometryFigure {
         double area = widthA * heightB;
         System.out.println(area);
         return area;
+    }
+
+    @Override
+    double perimetr() {
+        System.out.println("Rectangle perimetr: ");
+        double perimetr = widthA + lengthC;
+        System.out.println(perimetr);
+        return perimetr;
     }
 
 

@@ -26,4 +26,12 @@ public class Circle extends GeometryFigure {
         return area;
     }
 
+    @Override
+    double perimetr() {
+        System.out.println("Perimetr area: ");
+        double perimetr = 2 * pi * Math.pow(radius, 2);
+        System.out.println(perimetr);
+        return perimetr;
+    }
+
 }
