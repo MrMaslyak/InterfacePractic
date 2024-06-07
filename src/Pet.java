@@ -5,6 +5,12 @@ abstract class Pet  implements Animal, Weight,Information  {
     private final int weight;
 
     public Pet(String name, int age, String breed,int weight ) {
+        if (age < 0) {
+            throw new IllegalArgumentException("Age cannot be negative");
+        }
+        if (weight < 0) {
+            throw new IllegalArgumentException("Weight cannot be negative");
+        }
         this.name = name;
         this.age = age;
         this.breed = breed;

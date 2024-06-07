@@ -4,6 +4,15 @@ public class Rectangle extends GeometryFigure {
     private double heightB;
 
     public Rectangle(double widthA, double height, double lengthC) {
+        if (widthA < 0) {
+            throw new IllegalArgumentException("WidthA cannot be negative");
+        }
+        if (height < 0) {
+            throw new IllegalArgumentException("Height cannot be negative");
+        }
+        if (lengthC < 0) {
+            throw new IllegalArgumentException("LengthC cannot be negative");
+        }
         this.widthA = widthA;
         this.heightB = height;
         this.lengthC = lengthC;

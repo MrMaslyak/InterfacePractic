@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Circle circle = new Circle(5);
         Rectangle rectangle = new Rectangle(12, 10.5, 20);
-        Triangle triangle = new Triangle(9, 12, 15, 5);
+        Triangle triangle = new Triangle(10, 12, 15, 5);
         circle.area();
         rectangle.area();
         triangle.area();

@@ -5,6 +5,18 @@ public class Triangle extends GeometryFigure {
     private double height;
 
     public Triangle(double baseA, double baseB, double baseC, double height) {
+        if (baseA < 0) {
+            throw new IllegalArgumentException("BaseA cannot be negative");
+        }
+        if (baseB < 0) {
+            throw new IllegalArgumentException("BaseB cannot be negative");
+        }
+        if (baseC < 0) {
+            throw new IllegalArgumentException("BaseC cannot be negative");
+        }
+        if (height < 0) {
+            throw new IllegalArgumentException("Height cannot be negative");
+        }
         this.baseA = baseA;
         this.baseB = baseB;
         this.baseC = baseC;
