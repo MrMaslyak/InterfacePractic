@@ -1,22 +1,23 @@
+package GeometryTask;
+
 public class Rectangle extends GeometryFigure {
     private double widthA;
     private double lengthC;
     private double heightB;
 
-    public Rectangle(double widthA, double height, double lengthC) {
+    public Rectangle(double widthA, double heightB, double lengthC) {
         if (widthA < 0) {
             throw new IllegalArgumentException("WidthA cannot be negative");
         }
-        if (height < 0) {
-            throw new IllegalArgumentException("Height cannot be negative");
+        if (heightB < 0) {
+            throw new IllegalArgumentException("HeightB cannot be negative");
         }
         if (lengthC < 0) {
             throw new IllegalArgumentException("LengthC cannot be negative");
         }
         this.widthA = widthA;
-        this.heightB = height;
+        this.heightB = heightB;
         this.lengthC = lengthC;
-
     }
 
     public double getLengthC() {
@@ -44,20 +45,28 @@ public class Rectangle extends GeometryFigure {
     }
 
     @Override
-    double area() {
-        System.out.println("Rectangle area: ");
-        double area = widthA * heightB;
-        System.out.println(area);
-        return area;
+    public double area() {
+        double gg = widthA * heightB ;
+        System.out.print("Area Rectangle: " + gg);
+
+        return  gg;
     }
 
     @Override
-    double perimetr() {
-        System.out.println("Rectangle perimetr: ");
-        double perimetr = widthA + lengthC;
-        System.out.println(perimetr);
-        return perimetr;
+    public double perimetr() {
+        double gg = 2 * (widthA + lengthC) ;
+        System.out.print("Perimetr Rectangle: " + gg);
+
+        return  gg;
     }
 
-
+    @Override
+    public void printInfo() {
+        System.out.println("Rectangle:");
+        System.out.printf("Width: %.2f%n", widthA);
+        System.out.printf("Height: %.2f%n", heightB);
+        System.out.printf("Length: %.2f%n", lengthC);
+        System.out.printf("%n", area());
+        System.out.printf("%n", perimetr());
+    }
 }

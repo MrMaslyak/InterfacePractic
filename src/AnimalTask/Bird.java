@@ -1,4 +1,6 @@
-public class Bird extends Pet{
+package AnimalTask;
+
+public class Bird extends Pet {
     public Bird(String name, int age, String breed, int weight) {
         super(name, age, breed, weight);
     }

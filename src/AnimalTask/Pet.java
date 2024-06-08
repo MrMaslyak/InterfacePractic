@@ -1,4 +1,9 @@
-abstract class Pet  implements Animal, Weight,Information  {
+package AnimalTask;
+
+import Interface.Information;
+import Interface.Weight;
+
+public abstract class Pet  implements Animal, Weight, Information {
     private String name;
     private int age;
     private String breed;
@@ -9,7 +14,7 @@ abstract class Pet  implements Animal, Weight,Information  {
             throw new IllegalArgumentException("Age cannot be negative");
         }
         if (weight < 0) {
-            throw new IllegalArgumentException("Weight cannot be negative");
+            throw new IllegalArgumentException("Interface.Weight cannot be negative");
         }
         this.name = name;
         this.age = age;
@@ -21,7 +26,7 @@ abstract class Pet  implements Animal, Weight,Information  {
         System.out.println("Name: " + name);
         System.out.println("Age: " + age);
         System.out.println("Breed: " + breed);
-        System.out.println("Weight: " + weight + " kg");
+        System.out.println("Interface.Weight: " + weight + " kg");
     }
 
 

@@ -1,4 +1,6 @@
-public class Dog extends Pet{
+package AnimalTask;
+
+public class Dog extends Pet {
     public Dog(String name, int age, String breed, int weight) {
         super(name, age, breed, weight);
     }

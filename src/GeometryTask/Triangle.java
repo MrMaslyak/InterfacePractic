@@ -1,3 +1,5 @@
+package GeometryTask;
+
 public class Triangle extends GeometryFigure {
     private double baseA;
     private double baseB;
@@ -56,19 +58,30 @@ public class Triangle extends GeometryFigure {
     }
 
     @Override
-    double area() {
-        System.out.println("Triangle area: ");
-        double area = (baseA * height) / 2;
-        System.out.println(area);
-        return area;
+    public double area() {
+        double gg =  (baseA * height) / 2;
+        System.out.print("Area Triangle: " + gg);
+
+        return  gg;
     }
 
     @Override
-    double perimetr() {
-        System.out.println("Triangle perimetr: ");
-        double perimetr = baseA + baseB + baseC;
-        System.out.println(perimetr);
-        return perimetr;
+    public double perimetr() {
+        double gg =  baseA + baseB + baseC;
+        System.out.print("Perimetr Triangle: " + gg);
+
+        return  gg;
+
     }
 
+    @Override
+    public void printInfo() {
+        System.out.println("Triangle:");
+        System.out.printf("Base A: %.2f%n", baseA);
+        System.out.printf("Base B: %.2f%n", baseB);
+        System.out.printf("Base C: %.2f%n", baseC);
+        System.out.printf("Height: %.2f%n", height);
+        System.out.printf("%n",area());
+        System.out.printf("%n", perimetr());
+    }
 }
