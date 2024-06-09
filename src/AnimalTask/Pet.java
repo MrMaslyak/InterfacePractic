@@ -1,5 +1,6 @@
 package AnimalTask;
 
+import Interface.Animal;
 import Interface.Information;
 import Interface.Weight;
 

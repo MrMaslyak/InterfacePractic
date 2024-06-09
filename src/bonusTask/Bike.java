@@ -26,9 +26,9 @@ public class Bike extends Vehicle {
 
     @Override
     public void describe() {
-        System.out.println("Gear count this car: " + gearCount);
-        System.out.println("Max Speed this car: " + calculateMaxSpeed());
-        System.out.println("Average Speed this car: " + avarageSpeed);
+        System.out.println("Gear count this bike: " + gearCount);
+        System.out.println("Max Speed this bike: " + calculateMaxSpeed());
+        System.out.println("Average Speed this bike: " + avarageSpeed);
         System.out.println("-----------------------------------------");
 
     }

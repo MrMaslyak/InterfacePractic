@@ -1,6 +1,8 @@
 package bonusTask;
 
-abstract class Vehicle implements Info{
+import Interface.Info;
+
+abstract class Vehicle implements Info {
     protected int avarageSpeed;
 
     public Vehicle(int avarageSpeed) {

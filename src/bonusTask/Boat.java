@@ -26,9 +26,9 @@ protected int enginePower;
 
     @Override
    public void describe() {
-        System.out.println("Engine power count this car: " + enginePower);
-        System.out.println("Max Speed this car: " + calculateMaxSpeed());
-        System.out.println("Average Speed this car: " + avarageSpeed);
+        System.out.println("Engine power count this boat: " + enginePower);
+        System.out.println("Max Speed this boat: " + calculateMaxSpeed());
+        System.out.println("Average Speed this boat: " + avarageSpeed);
         System.out.println("-----------------------------------------");
 
     }

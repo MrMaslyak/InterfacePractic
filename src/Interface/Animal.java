@@ -1,4 +1,4 @@
-package AnimalTask;
+package Interface;
 
 public interface Animal {
     void soundAnimal();
