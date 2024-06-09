@@ -1,5 +1,9 @@
 package bonusTask2;
-
+//Задача про співробітників компанії:
+//Створіть абстрактний клас Employee з методами для обчислення зарплати та відображення інформації про співробітника.
+//Створіть класи Manager, Developer та Designer, які успадковують клас Employee і реалізують методи по-різному.
+//Створіть інтерфейс Trainable, який має методи для проведення тренінгів.
+//Реалізуйте цей інтерфейс у класах Manager, Developer та Designer.
 public class Main {
     public static void main(String[] args) {
         Company company = new Company();
