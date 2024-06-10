@@ -1,10 +1,6 @@
-import AnimalTask.Pet;
+import AnimalTask.*;
 import GeometryTask.*;
-import AnimalTask.Bird;
-import AnimalTask.Cat;
-import AnimalTask.Dog;
 import Interface.Information;
-
 import java.util.ArrayList;
 
 public class Main {
